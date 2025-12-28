@@ -1,0 +1,1140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:symbio="http://schemas.symbioworld.com/plugins/bpmn/v2" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" targetNamespace="http://www.celonis.com/bpmn20" exporter="celonis-process-adherence-manager" exporterVersion="1.0.0">
+    <bpmn:process name="Celonis Lmt Event" id="TProcess-1">
+        <bpmn:extensionElements>
+            <symbio:repositoryElements>
+                <symbio:repositoryElement id="e8c7ace7-f546-49c9-a53d-8a125a803b07" name="Interaction_tool-start" type="BestPracticeTask">
+                    <symbio:attributes>
+                        <symbio:attribute culture="127" type="celonisTeamId" value="6e5e5fca-d678-4e9a-b601-3b70b756ced7"/>
+                        <symbio:attribute culture="127" type="celonisNamespace" value="tool-start"/>
+                        <symbio:attribute culture="127" type="name" value="Interaction_tool-start"/>
+                        <symbio:attribute culture="127" type="id" value="Interaction_tool-start"/>
+                        <symbio:attribute culture="127" type="celonisPool" value="5e126191-efb5-439d-8af8-1c3c1a06a39b"/>
+                    </symbio:attributes>
+                </symbio:repositoryElement>
+                <symbio:repositoryElement id="5006252d-3318-49de-ad34-80cf6b405f33" name="Answer_Add Or New Hybrid" type="BestPracticeTask">
+                    <symbio:attributes>
+                        <symbio:attribute culture="127" type="celonisTeamId" value="6e5e5fca-d678-4e9a-b601-3b70b756ced7"/>
+                        <symbio:attribute culture="127" type="celonisNamespace" value="AddOrNewHybrid"/>
+                        <symbio:attribute culture="127" type="name" value="Answer_Add Or New Hybrid"/>
+                        <symbio:attribute culture="127" type="id" value="Answer_AddOrNewHybrid"/>
+                        <symbio:attribute culture="127" type="celonisPool" value="5e126191-efb5-439d-8af8-1c3c1a06a39b"/>
+                    </symbio:attributes>
+                </symbio:repositoryElement>
+                <symbio:repositoryElement id="e49b1140-f7ea-4409-8235-2486e4bdb6c7" name="Answer_Energy Source Choices Hybrid" type="BestPracticeTask">
+                    <symbio:attributes>
+                        <symbio:attribute culture="127" type="celonisTeamId" value="6e5e5fca-d678-4e9a-b601-3b70b756ced7"/>
+                        <symbio:attribute culture="127" type="celonisNamespace" value="EnergySourceChoicesHybrid"/>
+                        <symbio:attribute culture="127" type="name" value="Answer_Energy Source Choices Hybrid"/>
+                        <symbio:attribute culture="127" type="id" value="Answer_EnergySourceChoicesHybrid"/>
+                        <symbio:attribute culture="127" type="celonisPool" value="5e126191-efb5-439d-8af8-1c3c1a06a39b"/>
+                    </symbio:attributes>
+                </symbio:repositoryElement>
+                <symbio:repositoryElement id="57fca0c5-636e-44cd-b85c-9daf44d6e5c5" name="Answer_Lead Purpose" type="BestPracticeTask">
+                    <symbio:attributes>
+                        <symbio:attribute culture="127" type="celonisTeamId" value="6e5e5fca-d678-4e9a-b601-3b70b756ced7"/>
+                        <symbio:attribute culture="127" type="celonisNamespace" value="LeadPurpose"/>
+                        <symbio:attribute culture="127" type="name" value="Answer_Lead Purpose"/>
+                        <symbio:attribute culture="127" type="id" value="Answer_LeadPurpose"/>
+                        <symbio:attribute culture="127" type="celonisPool" value="5e126191-efb5-439d-8af8-1c3c1a06a39b"/>
+                    </symbio:attributes>
+                </symbio:repositoryElement>
+                <symbio:repositoryElement id="e1057ffd-f951-430e-a7d3-0793defa7228" name="Answer_Building Type" type="BestPracticeTask">
+                    <symbio:attributes>
+                        <symbio:attribute culture="127" type="celonisTeamId" value="6e5e5fca-d678-4e9a-b601-3b70b756ced7"/>
+                        <symbio:attribute culture="127" type="celonisNamespace" value="BuildingType"/>
+                        <symbio:attribute culture="127" type="name" value="Answer_Building Type"/>
+                        <symbio:attribute culture="127" type="id" value="Answer_BuildingType"/>
+                        <symbio:attribute culture="127" type="celonisPool" value="5e126191-efb5-439d-8af8-1c3c1a06a39b"/>
+                    </symbio:attributes>
+                </symbio:repositoryElement>
+                <symbio:repositoryElement id="5917927f-e6f0-4d6b-9df6-9ab36e38b09f" name="Answer_Building Year" type="BestPracticeTask">
+                    <symbio:attributes>
+                        <symbio:attribute culture="127" type="celonisTeamId" value="6e5e5fca-d678-4e9a-b601-3b70b756ced7"/>
+                        <symbio:attribute culture="127" type="celonisNamespace" value="BuildingYear"/>
+                        <symbio:attribute culture="127" type="name" value="Answer_Building Year"/>
+                        <symbio:attribute culture="127" type="id" value="Answer_BuildingYear"/>
+                        <symbio:attribute culture="127" type="celonisPool" value="5e126191-efb5-439d-8af8-1c3c1a06a39b"/>
+                    </symbio:attributes>
+                </symbio:repositoryElement>
+                <symbio:repositoryElement id="62e0f7b4-f3b5-4166-ad1a-67703efc4830" name="Answer_Air Conditioned Room" type="BestPracticeTask">
+                    <symbio:attributes>
+                        <symbio:attribute culture="127" type="celonisTeamId" value="6e5e5fca-d678-4e9a-b601-3b70b756ced7"/>
+                        <symbio:attribute culture="127" type="celonisNamespace" value="AirConditionedRoom"/>
+                        <symbio:attribute culture="127" type="name" value="Answer_Air Conditioned Room"/>
+                        <symbio:attribute culture="127" type="id" value="Answer_AirConditionedRoom"/>
+                        <symbio:attribute culture="127" type="celonisPool" value="5e126191-efb5-439d-8af8-1c3c1a06a39b"/>
+                    </symbio:attributes>
+                </symbio:repositoryElement>
+                <symbio:repositoryElement id="37ad747c-5e1b-4699-a719-93eadecee245" name="Answer_Number Of Air Conditioned Rooms" type="BestPracticeTask">
+                    <symbio:attributes>
+                        <symbio:attribute culture="127" type="celonisTeamId" value="6e5e5fca-d678-4e9a-b601-3b70b756ced7"/>
+                        <symbio:attribute culture="127" type="celonisNamespace" value="NumberOfAirConditionedRooms"/>
+                        <symbio:attribute culture="127" type="name" value="Answer_Number Of Air Conditioned Rooms"/>
+                        <symbio:attribute culture="127" type="id" value="Answer_NumberOfAirConditionedRooms"/>
+                        <symbio:attribute culture="127" type="celonisPool" value="5e126191-efb5-439d-8af8-1c3c1a06a39b"/>
+                    </symbio:attributes>
+                </symbio:repositoryElement>
+                <symbio:repositoryElement id="0c09afe3-4a91-4330-93d4-5bae648d599b" name="Answer_Air Conditioned Area" type="BestPracticeTask">
+                    <symbio:attributes>
+                        <symbio:attribute culture="127" type="celonisTeamId" value="6e5e5fca-d678-4e9a-b601-3b70b756ced7"/>
+                        <symbio:attribute culture="127" type="celonisNamespace" value="AirConditionedArea"/>
+                        <symbio:attribute culture="127" type="name" value="Answer_Air Conditioned Area"/>
+                        <symbio:attribute culture="127" type="id" value="Answer_AirConditionedArea"/>
+                        <symbio:attribute culture="127" type="celonisPool" value="5e126191-efb5-439d-8af8-1c3c1a06a39b"/>
+                    </symbio:attributes>
+                </symbio:repositoryElement>
+                <symbio:repositoryElement id="70ab1586-f54e-4023-b67d-94d39aa7cb59" name="Interaction_button-click" type="BestPracticeTask">
+                    <symbio:attributes>
+                        <symbio:attribute culture="127" type="celonisTeamId" value="6e5e5fca-d678-4e9a-b601-3b70b756ced7"/>
+                        <symbio:attribute culture="127" type="celonisNamespace" value="button-click"/>
+                        <symbio:attribute culture="127" type="name" value="Interaction_button-click"/>
+                        <symbio:attribute culture="127" type="id" value="Interaction_button-click"/>
+                        <symbio:attribute culture="127" type="celonisPool" value="5e126191-efb5-439d-8af8-1c3c1a06a39b"/>
+                    </symbio:attributes>
+                </symbio:repositoryElement>
+                <symbio:repositoryElement id="50ef3326-a948-4a79-ae9a-d708ec6feb94" name="Answer_Quantity Of Sunlight" type="BestPracticeTask">
+                    <symbio:attributes>
+                        <symbio:attribute culture="127" type="celonisTeamId" value="6e5e5fca-d678-4e9a-b601-3b70b756ced7"/>
+                        <symbio:attribute culture="127" type="celonisNamespace" value="QuantityOfSunlight"/>
+                        <symbio:attribute culture="127" type="name" value="Answer_Quantity Of Sunlight"/>
+                        <symbio:attribute culture="127" type="id" value="Answer_QuantityOfSunlight"/>
+                        <symbio:attribute culture="127" type="celonisPool" value="5e126191-efb5-439d-8af8-1c3c1a06a39b"/>
+                    </symbio:attributes>
+                </symbio:repositoryElement>
+                <symbio:repositoryElement id="47efb8f3-1d7c-490a-8184-365c1e16cb91" name="Answer_Outdoor Unit Mounting" type="BestPracticeTask">
+                    <symbio:attributes>
+                        <symbio:attribute culture="127" type="celonisTeamId" value="6e5e5fca-d678-4e9a-b601-3b70b756ced7"/>
+                        <symbio:attribute culture="127" type="celonisNamespace" value="OutdoorUnitMounting"/>
+                        <symbio:attribute culture="127" type="name" value="Answer_Outdoor Unit Mounting"/>
+                        <symbio:attribute culture="127" type="id" value="Answer_OutdoorUnitMounting"/>
+                        <symbio:attribute culture="127" type="celonisPool" value="5e126191-efb5-439d-8af8-1c3c1a06a39b"/>
+                    </symbio:attributes>
+                </symbio:repositoryElement>
+                <symbio:repositoryElement id="d0464f4c-68af-4c3b-85b9-9a3773f527ee" name="Answer_Accessories Display" type="BestPracticeTask">
+                    <symbio:attributes>
+                        <symbio:attribute culture="127" type="celonisTeamId" value="6e5e5fca-d678-4e9a-b601-3b70b756ced7"/>
+                        <symbio:attribute culture="127" type="celonisNamespace" value="AccessoriesDisplay"/>
+                        <symbio:attribute culture="127" type="name" value="Answer_Accessories Display"/>
+                        <symbio:attribute culture="127" type="id" value="Answer_AccessoriesDisplay"/>
+                        <symbio:attribute culture="127" type="celonisPool" value="5e126191-efb5-439d-8af8-1c3c1a06a39b"/>
+                    </symbio:attributes>
+                </symbio:repositoryElement>
+                <symbio:repositoryElement id="0badde1b-163f-46d8-ac85-67f45536b2aa" name="Answer_Desired Heatpump Type" type="BestPracticeTask">
+                    <symbio:attributes>
+                        <symbio:attribute culture="127" type="celonisTeamId" value="6e5e5fca-d678-4e9a-b601-3b70b756ced7"/>
+                        <symbio:attribute culture="127" type="celonisNamespace" value="DesiredHeatpumpType"/>
+                        <symbio:attribute culture="127" type="name" value="Answer_Desired Heatpump Type"/>
+                        <symbio:attribute culture="127" type="id" value="Answer_DesiredHeatpumpType"/>
+                        <symbio:attribute culture="127" type="celonisPool" value="5e126191-efb5-439d-8af8-1c3c1a06a39b"/>
+                    </symbio:attributes>
+                </symbio:repositoryElement>
+                <symbio:repositoryElement id="99556791-4104-47e8-97eb-4396521f90ef" name="Answer_Consider Drilling" type="BestPracticeTask">
+                    <symbio:attributes>
+                        <symbio:attribute culture="127" type="celonisTeamId" value="6e5e5fca-d678-4e9a-b601-3b70b756ced7"/>
+                        <symbio:attribute culture="127" type="celonisNamespace" value="ConsiderDrilling"/>
+                        <symbio:attribute culture="127" type="name" value="Answer_Consider Drilling"/>
+                        <symbio:attribute culture="127" type="id" value="Answer_ConsiderDrilling"/>
+                        <symbio:attribute culture="127" type="celonisPool" value="5e126191-efb5-439d-8af8-1c3c1a06a39b"/>
+                    </symbio:attributes>
+                </symbio:repositoryElement>
+                <symbio:repositoryElement id="bdcd14bc-96aa-41ad-843c-a8aa853c8143" name="Answer_Number Of Inhabitants" type="BestPracticeTask">
+                    <symbio:attributes>
+                        <symbio:attribute culture="127" type="celonisTeamId" value="6e5e5fca-d678-4e9a-b601-3b70b756ced7"/>
+                        <symbio:attribute culture="127" type="celonisNamespace" value="NumberOfInhabitants"/>
+                        <symbio:attribute culture="127" type="name" value="Answer_Number Of Inhabitants"/>
+                        <symbio:attribute culture="127" type="id" value="Answer_NumberOfInhabitants"/>
+                        <symbio:attribute culture="127" type="celonisPool" value="5e126191-efb5-439d-8af8-1c3c1a06a39b"/>
+                    </symbio:attributes>
+                </symbio:repositoryElement>
+                <symbio:repositoryElement id="603ae343-84a4-4494-997b-a0d2c09db7b5" name="Answer_Transfer" type="BestPracticeTask">
+                    <symbio:attributes>
+                        <symbio:attribute culture="127" type="celonisTeamId" value="6e5e5fca-d678-4e9a-b601-3b70b756ced7"/>
+                        <symbio:attribute culture="127" type="celonisNamespace" value="Transfer"/>
+                        <symbio:attribute culture="127" type="name" value="Answer_Transfer"/>
+                        <symbio:attribute culture="127" type="id" value="Answer_Transfer"/>
+                        <symbio:attribute culture="127" type="celonisPool" value="5e126191-efb5-439d-8af8-1c3c1a06a39b"/>
+                    </symbio:attributes>
+                </symbio:repositoryElement>
+                <symbio:repositoryElement id="00bd1fb1-0057-478f-b4b1-fbd5444dc980" name="Answer_Number Of Bathrooms" type="BestPracticeTask">
+                    <symbio:attributes>
+                        <symbio:attribute culture="127" type="celonisTeamId" value="6e5e5fca-d678-4e9a-b601-3b70b756ced7"/>
+                        <symbio:attribute culture="127" type="celonisNamespace" value="NumberOfBathrooms"/>
+                        <symbio:attribute culture="127" type="name" value="Answer_Number Of Bathrooms"/>
+                        <symbio:attribute culture="127" type="id" value="Answer_NumberOfBathrooms"/>
+                        <symbio:attribute culture="127" type="celonisPool" value="5e126191-efb5-439d-8af8-1c3c1a06a39b"/>
+                    </symbio:attributes>
+                </symbio:repositoryElement>
+                <symbio:repositoryElement id="32ac1107-c735-4515-a5c3-4138727cf019" name="Answer_Solar" type="BestPracticeTask">
+                    <symbio:attributes>
+                        <symbio:attribute culture="127" type="celonisTeamId" value="6e5e5fca-d678-4e9a-b601-3b70b756ced7"/>
+                        <symbio:attribute culture="127" type="celonisNamespace" value="Solar"/>
+                        <symbio:attribute culture="127" type="name" value="Answer_Solar"/>
+                        <symbio:attribute culture="127" type="id" value="Answer_Solar"/>
+                        <symbio:attribute culture="127" type="celonisPool" value="5e126191-efb5-439d-8af8-1c3c1a06a39b"/>
+                    </symbio:attributes>
+                </symbio:repositoryElement>
+                <symbio:repositoryElement id="d4da44f6-86f8-43fc-983e-92f7860b0123" name="Answer_Has Domestic Hot Water" type="BestPracticeTask">
+                    <symbio:attributes>
+                        <symbio:attribute culture="127" type="celonisTeamId" value="6e5e5fca-d678-4e9a-b601-3b70b756ced7"/>
+                        <symbio:attribute culture="127" type="celonisNamespace" value="HasDomesticHotWater"/>
+                        <symbio:attribute culture="127" type="name" value="Answer_Has Domestic Hot Water"/>
+                        <symbio:attribute culture="127" type="id" value="Answer_HasDomesticHotWater"/>
+                        <symbio:attribute culture="127" type="celonisPool" value="5e126191-efb5-439d-8af8-1c3c1a06a39b"/>
+                    </symbio:attributes>
+                </symbio:repositoryElement>
+                <symbio:repositoryElement id="0caf3ef7-bc2b-4a7c-967a-ec35177f8ce6" name="Answer_Energy Consumption" type="BestPracticeTask">
+                    <symbio:attributes>
+                        <symbio:attribute culture="127" type="celonisTeamId" value="6e5e5fca-d678-4e9a-b601-3b70b756ced7"/>
+                        <symbio:attribute culture="127" type="celonisNamespace" value="EnergyConsumption"/>
+                        <symbio:attribute culture="127" type="name" value="Answer_Energy Consumption"/>
+                        <symbio:attribute culture="127" type="id" value="Answer_EnergyConsumption"/>
+                        <symbio:attribute culture="127" type="celonisPool" value="5e126191-efb5-439d-8af8-1c3c1a06a39b"/>
+                    </symbio:attributes>
+                </symbio:repositoryElement>
+                <symbio:repositoryElement id="b7b30db3-c401-42dd-a2e1-68196f653c14" name="Answer_Product Display" type="BestPracticeTask">
+                    <symbio:attributes>
+                        <symbio:attribute culture="127" type="celonisTeamId" value="6e5e5fca-d678-4e9a-b601-3b70b756ced7"/>
+                        <symbio:attribute culture="127" type="celonisNamespace" value="ProductDisplay"/>
+                        <symbio:attribute culture="127" type="name" value="Answer_Product Display"/>
+                        <symbio:attribute culture="127" type="id" value="Answer_ProductDisplay"/>
+                        <symbio:attribute culture="127" type="celonisPool" value="5e126191-efb5-439d-8af8-1c3c1a06a39b"/>
+                    </symbio:attributes>
+                </symbio:repositoryElement>
+                <symbio:repositoryElement id="bc2833b8-bfac-422a-bcfd-0065efb7531d" name="Answer_Services Display" type="BestPracticeTask">
+                    <symbio:attributes>
+                        <symbio:attribute culture="127" type="celonisTeamId" value="6e5e5fca-d678-4e9a-b601-3b70b756ced7"/>
+                        <symbio:attribute culture="127" type="celonisNamespace" value="ServicesDisplay"/>
+                        <symbio:attribute culture="127" type="name" value="Answer_Services Display"/>
+                        <symbio:attribute culture="127" type="id" value="Answer_ServicesDisplay"/>
+                        <symbio:attribute culture="127" type="celonisPool" value="5e126191-efb5-439d-8af8-1c3c1a06a39b"/>
+                    </symbio:attributes>
+                </symbio:repositoryElement>
+                <symbio:repositoryElement id="6f132f35-d194-4b29-8af2-8244f03cd24a" name="Answer_Area Covered" type="BestPracticeTask">
+                    <symbio:attributes>
+                        <symbio:attribute culture="127" type="celonisTeamId" value="6e5e5fca-d678-4e9a-b601-3b70b756ced7"/>
+                        <symbio:attribute culture="127" type="celonisNamespace" value="AreaCovered"/>
+                        <symbio:attribute culture="127" type="name" value="Answer_Area Covered"/>
+                        <symbio:attribute culture="127" type="id" value="Answer_AreaCovered"/>
+                        <symbio:attribute culture="127" type="celonisPool" value="5e126191-efb5-439d-8af8-1c3c1a06a39b"/>
+                    </symbio:attributes>
+                </symbio:repositoryElement>
+                <symbio:repositoryElement id="2376809d-429d-4f65-b8b3-9a4e12e40fc5" name="Interaction_coverage-check" type="BestPracticeTask">
+                    <symbio:attributes>
+                        <symbio:attribute culture="127" type="celonisTeamId" value="6e5e5fca-d678-4e9a-b601-3b70b756ced7"/>
+                        <symbio:attribute culture="127" type="celonisNamespace" value="coverage-check"/>
+                        <symbio:attribute culture="127" type="name" value="Interaction_coverage-check"/>
+                        <symbio:attribute culture="127" type="id" value="Interaction_coverage-check"/>
+                        <symbio:attribute culture="127" type="celonisPool" value="5e126191-efb5-439d-8af8-1c3c1a06a39b"/>
+                    </symbio:attributes>
+                </symbio:repositoryElement>
+                <symbio:repositoryElement id="d145238b-2eae-49fa-9b7c-6fa19a85eb19" name="Answer_Installers Display" type="BestPracticeTask">
+                    <symbio:attributes>
+                        <symbio:attribute culture="127" type="celonisTeamId" value="6e5e5fca-d678-4e9a-b601-3b70b756ced7"/>
+                        <symbio:attribute culture="127" type="celonisNamespace" value="InstallersDisplay"/>
+                        <symbio:attribute culture="127" type="name" value="Answer_Installers Display"/>
+                        <symbio:attribute culture="127" type="id" value="Answer_InstallersDisplay"/>
+                        <symbio:attribute culture="127" type="celonisPool" value="5e126191-efb5-439d-8af8-1c3c1a06a39b"/>
+                    </symbio:attributes>
+                </symbio:repositoryElement>
+                <symbio:repositoryElement id="572a5779-687b-4237-8e3b-b8c56abb1aa2" name="Dispatched To Workflow Engine" type="BestPracticeTask">
+                    <symbio:attributes>
+                        <symbio:attribute culture="127" type="celonisTeamId" value="6e5e5fca-d678-4e9a-b601-3b70b756ced7"/>
+                        <symbio:attribute culture="127" type="celonisNamespace" value="custom"/>
+                        <symbio:attribute culture="127" type="name" value="Dispatched To Workflow Engine"/>
+                        <symbio:attribute culture="127" type="id" value="DispatchedToWorkflowEngine"/>
+                        <symbio:attribute culture="127" type="celonisPool" value="5e126191-efb5-439d-8af8-1c3c1a06a39b"/>
+                    </symbio:attributes>
+                </symbio:repositoryElement>
+                <symbio:repositoryElement id="3ed37054-e63a-4c0d-b258-bfad502d2b86" name="LMT_Lead" type="BestPracticeTask">
+                    <symbio:attributes>
+                        <symbio:attribute culture="127" type="celonisTeamId" value="6e5e5fca-d678-4e9a-b601-3b70b756ced7"/>
+                        <symbio:attribute culture="127" type="celonisNamespace" value="Lead"/>
+                        <symbio:attribute culture="127" type="name" value="LMT_Lead"/>
+                        <symbio:attribute culture="127" type="id" value="LMT_Lead"/>
+                        <symbio:attribute culture="127" type="celonisPool" value="5e126191-efb5-439d-8af8-1c3c1a06a39b"/>
+                    </symbio:attributes>
+                </symbio:repositoryElement>
+            </symbio:repositoryElements>
+        </bpmn:extensionElements>
+        <bpmn:task name="Answer_Energy Consumption" id="TTask-42">
+            <bpmn:extensionElements>
+                <symbio:relatedElements>
+                    <symbio:relatedElement type="nonLocalBestPracticeTasks">0caf3ef7-bc2b-4a7c-967a-ec35177f8ce6</symbio:relatedElement>
+                </symbio:relatedElements>
+            </bpmn:extensionElements>
+            <bpmn:incoming xmlns="">TSequenceFlow-79</bpmn:incoming>
+            <bpmn:outgoing xmlns="">TSequenceFlow-62</bpmn:outgoing>
+        </bpmn:task>
+        <bpmn:parallelGateway id="TParallelGateway-29">
+            <bpmn:incoming xmlns="">TSequenceFlow-60</bpmn:incoming>
+            <bpmn:outgoing xmlns="">TSequenceFlow-63</bpmn:outgoing>
+            <bpmn:outgoing xmlns="">TSequenceFlow-79</bpmn:outgoing>
+        </bpmn:parallelGateway>
+        <bpmn:task name="Answer_Consider Drilling" id="TTask-28">
+            <bpmn:extensionElements>
+                <symbio:relatedElements>
+                    <symbio:relatedElement type="nonLocalBestPracticeTasks">99556791-4104-47e8-97eb-4396521f90ef</symbio:relatedElement>
+                </symbio:relatedElements>
+            </bpmn:extensionElements>
+            <bpmn:incoming xmlns="">TSequenceFlow-25</bpmn:incoming>
+            <bpmn:outgoing xmlns="">TSequenceFlow-27</bpmn:outgoing>
+        </bpmn:task>
+        <bpmn:task name="Answer_Services Display" id="TTask-44">
+            <bpmn:extensionElements>
+                <symbio:relatedElements>
+                    <symbio:relatedElement type="nonLocalBestPracticeTasks">bc2833b8-bfac-422a-bcfd-0065efb7531d</symbio:relatedElement>
+                </symbio:relatedElements>
+            </bpmn:extensionElements>
+            <bpmn:incoming xmlns="">TSequenceFlow-81</bpmn:incoming>
+            <bpmn:outgoing xmlns="">TSequenceFlow-82</bpmn:outgoing>
+        </bpmn:task>
+        <bpmn:task name="Answer_Air Conditioned Room" id="TTask-14">
+            <bpmn:extensionElements>
+                <symbio:relatedElements>
+                    <symbio:relatedElement type="nonLocalBestPracticeTasks">62e0f7b4-f3b5-4166-ad1a-67703efc4830</symbio:relatedElement>
+                </symbio:relatedElements>
+            </bpmn:extensionElements>
+            <bpmn:incoming xmlns="">TSequenceFlow-42</bpmn:incoming>
+            <bpmn:outgoing xmlns="">TSequenceFlow-41</bpmn:outgoing>
+        </bpmn:task>
+        <bpmn:task name="Answer_Solar" id="TTask-40">
+            <bpmn:extensionElements>
+                <symbio:relatedElements>
+                    <symbio:relatedElement type="nonLocalBestPracticeTasks">32ac1107-c735-4515-a5c3-4138727cf019</symbio:relatedElement>
+                </symbio:relatedElements>
+            </bpmn:extensionElements>
+            <bpmn:incoming xmlns="">TSequenceFlow-77</bpmn:incoming>
+            <bpmn:outgoing xmlns="">TSequenceFlow-69</bpmn:outgoing>
+        </bpmn:task>
+        <bpmn:exclusiveGateway id="TExclusiveGateway-12">
+            <bpmn:incoming xmlns="">TSequenceFlow-59</bpmn:incoming>
+            <bpmn:outgoing xmlns="">TSequenceFlow-32</bpmn:outgoing>
+            <bpmn:outgoing xmlns="">TSequenceFlow-42</bpmn:outgoing>
+        </bpmn:exclusiveGateway>
+        <bpmn:exclusiveGateway id="TExclusiveGateway-38">
+            <bpmn:incoming xmlns="">TSequenceFlow-74</bpmn:incoming>
+            <bpmn:incoming xmlns="">TSequenceFlow-75</bpmn:incoming>
+            <bpmn:outgoing xmlns="">TSequenceFlow-68</bpmn:outgoing>
+        </bpmn:exclusiveGateway>
+        <bpmn:endEvent id="TEndEvent-1">
+            <bpmn:incoming xmlns="">TSequenceFlow-105</bpmn:incoming>
+        </bpmn:endEvent>
+        <bpmn:exclusiveGateway id="TExclusiveGateway-4">
+            <bpmn:incoming xmlns="">TSequenceFlow-48</bpmn:incoming>
+            <bpmn:incoming xmlns="">TSequenceFlow-49</bpmn:incoming>
+            <bpmn:incoming xmlns="">TSequenceFlow-50</bpmn:incoming>
+            <bpmn:outgoing xmlns="">TSequenceFlow-54</bpmn:outgoing>
+        </bpmn:exclusiveGateway>
+        <bpmn:task name="Answer_Add Or New Hybrid" id="TTask-5">
+            <bpmn:extensionElements>
+                <symbio:relatedElements>
+                    <symbio:relatedElement type="nonLocalBestPracticeTasks">5006252d-3318-49de-ad34-80cf6b405f33</symbio:relatedElement>
+                </symbio:relatedElements>
+            </bpmn:extensionElements>
+            <bpmn:incoming xmlns="">TSequenceFlow-51</bpmn:incoming>
+            <bpmn:outgoing xmlns="">TSequenceFlow-52</bpmn:outgoing>
+        </bpmn:task>
+        <bpmn:exclusiveGateway id="TExclusiveGateway-26">
+            <bpmn:incoming xmlns="">TSequenceFlow-28</bpmn:incoming>
+            <bpmn:outgoing xmlns="">TSequenceFlow-25</bpmn:outgoing>
+            <bpmn:outgoing xmlns="">TSequenceFlow-26</bpmn:outgoing>
+        </bpmn:exclusiveGateway>
+        <bpmn:task name="Answer_Has Domestic Hot Water" id="TTask-41">
+            <bpmn:extensionElements>
+                <symbio:relatedElements>
+                    <symbio:relatedElement type="nonLocalBestPracticeTasks">d4da44f6-86f8-43fc-983e-92f7860b0123</symbio:relatedElement>
+                </symbio:relatedElements>
+            </bpmn:extensionElements>
+            <bpmn:incoming xmlns="">TSequenceFlow-78</bpmn:incoming>
+            <bpmn:outgoing xmlns="">TSequenceFlow-70</bpmn:outgoing>
+        </bpmn:task>
+        <bpmn:task name="Answer_Quantity Of Sunlight" id="TTask-20">
+            <bpmn:extensionElements>
+                <symbio:relatedElements>
+                    <symbio:relatedElement type="nonLocalBestPracticeTasks">50ef3326-a948-4a79-ae9a-d708ec6feb94</symbio:relatedElement>
+                </symbio:relatedElements>
+            </bpmn:extensionElements>
+            <bpmn:incoming xmlns="">TSequenceFlow-35</bpmn:incoming>
+            <bpmn:outgoing xmlns="">TSequenceFlow-34</bpmn:outgoing>
+        </bpmn:task>
+        <bpmn:parallelGateway id="TParallelGateway-35">
+            <bpmn:incoming xmlns="">TSequenceFlow-68</bpmn:incoming>
+            <bpmn:incoming xmlns="">TSequenceFlow-69</bpmn:incoming>
+            <bpmn:incoming xmlns="">TSequenceFlow-70</bpmn:incoming>
+            <bpmn:outgoing xmlns="">TSequenceFlow-61</bpmn:outgoing>
+        </bpmn:parallelGateway>
+        <bpmn:task name="Answer_Transfer" id="TTask-36">
+            <bpmn:extensionElements>
+                <symbio:relatedElements>
+                    <symbio:relatedElement type="nonLocalBestPracticeTasks">603ae343-84a4-4494-997b-a0d2c09db7b5</symbio:relatedElement>
+                </symbio:relatedElements>
+            </bpmn:extensionElements>
+            <bpmn:incoming xmlns="">TSequenceFlow-71</bpmn:incoming>
+            <bpmn:outgoing xmlns="">TSequenceFlow-73</bpmn:outgoing>
+            <bpmn:standardLoopCharacteristics id="TStandardLoopCharacteristics-TTask-36"/>
+        </bpmn:task>
+        <bpmn:task name="Answer_Outdoor Unit Mounting" id="TTask-21">
+            <bpmn:extensionElements>
+                <symbio:relatedElements>
+                    <symbio:relatedElement type="nonLocalBestPracticeTasks">47efb8f3-1d7c-490a-8184-365c1e16cb91</symbio:relatedElement>
+                </symbio:relatedElements>
+            </bpmn:extensionElements>
+            <bpmn:incoming xmlns="">TSequenceFlow-34</bpmn:incoming>
+            <bpmn:outgoing xmlns="">TSequenceFlow-33</bpmn:outgoing>
+        </bpmn:task>
+        <bpmn:exclusiveGateway id="TExclusiveGateway-49">
+            <bpmn:incoming xmlns="">TSequenceFlow-86</bpmn:incoming>
+            <bpmn:incoming xmlns="">TSequenceFlow-87</bpmn:incoming>
+            <bpmn:outgoing xmlns="">TSequenceFlow-104</bpmn:outgoing>
+        </bpmn:exclusiveGateway>
+        <bpmn:exclusiveGateway id="TExclusiveGateway-10">
+            <bpmn:incoming xmlns="">TSequenceFlow-56</bpmn:incoming>
+            <bpmn:incoming xmlns="">TSequenceFlow-57</bpmn:incoming>
+            <bpmn:outgoing xmlns="">TSequenceFlow-59</bpmn:outgoing>
+        </bpmn:exclusiveGateway>
+        <bpmn:startEvent name="Celonis Lmt Event" id="TStartEvent-0">
+            <bpmn:outgoing xmlns="">TSequenceFlow-46</bpmn:outgoing>
+        </bpmn:startEvent>
+        <bpmn:task name="Answer_Building Type" id="TTask-8">
+            <bpmn:extensionElements>
+                <symbio:relatedElements>
+                    <symbio:relatedElement type="nonLocalBestPracticeTasks">e1057ffd-f951-430e-a7d3-0793defa7228</symbio:relatedElement>
+                </symbio:relatedElements>
+            </bpmn:extensionElements>
+            <bpmn:incoming xmlns="">TSequenceFlow-54</bpmn:incoming>
+            <bpmn:outgoing xmlns="">TSequenceFlow-55</bpmn:outgoing>
+        </bpmn:task>
+        <bpmn:parallelGateway id="TParallelGateway-30">
+            <bpmn:incoming xmlns="">TSequenceFlow-61</bpmn:incoming>
+            <bpmn:incoming xmlns="">TSequenceFlow-62</bpmn:incoming>
+            <bpmn:outgoing xmlns="">TSequenceFlow-44</bpmn:outgoing>
+        </bpmn:parallelGateway>
+        <bpmn:task name="Answer_Number Of Inhabitants" id="TTask-33">
+            <bpmn:extensionElements>
+                <symbio:relatedElements>
+                    <symbio:relatedElement type="nonLocalBestPracticeTasks">bdcd14bc-96aa-41ad-843c-a8aa853c8143</symbio:relatedElement>
+                </symbio:relatedElements>
+            </bpmn:extensionElements>
+            <bpmn:incoming xmlns="">TSequenceFlow-66</bpmn:incoming>
+            <bpmn:outgoing xmlns="">TSequenceFlow-65</bpmn:outgoing>
+        </bpmn:task>
+        <bpmn:parallelGateway id="TParallelGateway-34">
+            <bpmn:incoming xmlns="">TSequenceFlow-67</bpmn:incoming>
+            <bpmn:outgoing xmlns="">TSequenceFlow-71</bpmn:outgoing>
+            <bpmn:outgoing xmlns="">TSequenceFlow-77</bpmn:outgoing>
+            <bpmn:outgoing xmlns="">TSequenceFlow-78</bpmn:outgoing>
+        </bpmn:parallelGateway>
+        <bpmn:task name="Interaction_coverage-check" id="TTask-46">
+            <bpmn:extensionElements>
+                <symbio:relatedElements>
+                    <symbio:relatedElement type="nonLocalBestPracticeTasks">2376809d-429d-4f65-b8b3-9a4e12e40fc5</symbio:relatedElement>
+                </symbio:relatedElements>
+            </bpmn:extensionElements>
+            <bpmn:incoming xmlns="">TSequenceFlow-83</bpmn:incoming>
+            <bpmn:outgoing xmlns="">TSequenceFlow-84</bpmn:outgoing>
+        </bpmn:task>
+        <bpmn:exclusiveGateway id="TExclusiveGateway-17">
+            <bpmn:incoming xmlns="">TSequenceFlow-39</bpmn:incoming>
+            <bpmn:outgoing xmlns="">TSequenceFlow-36</bpmn:outgoing>
+            <bpmn:outgoing xmlns="">TSequenceFlow-37</bpmn:outgoing>
+        </bpmn:exclusiveGateway>
+        <bpmn:task name="Answer_Area Covered" id="TTask-45">
+            <bpmn:extensionElements>
+                <symbio:relatedElements>
+                    <symbio:relatedElement type="nonLocalBestPracticeTasks">6f132f35-d194-4b29-8af2-8244f03cd24a</symbio:relatedElement>
+                </symbio:relatedElements>
+            </bpmn:extensionElements>
+            <bpmn:incoming xmlns="">TSequenceFlow-82</bpmn:incoming>
+            <bpmn:outgoing xmlns="">TSequenceFlow-83</bpmn:outgoing>
+        </bpmn:task>
+        <bpmn:task name="Answer_Accessories Display" id="TTask-22">
+            <bpmn:extensionElements>
+                <symbio:relatedElements>
+                    <symbio:relatedElement type="nonLocalBestPracticeTasks">d0464f4c-68af-4c3b-85b9-9a3773f527ee</symbio:relatedElement>
+                </symbio:relatedElements>
+            </bpmn:extensionElements>
+            <bpmn:incoming xmlns="">TSequenceFlow-33</bpmn:incoming>
+            <bpmn:outgoing xmlns="">TSequenceFlow-43</bpmn:outgoing>
+        </bpmn:task>
+        <bpmn:task name="Answer_Building Year" id="TTask-11">
+            <bpmn:extensionElements>
+                <symbio:relatedElements>
+                    <symbio:relatedElement type="nonLocalBestPracticeTasks">5917927f-e6f0-4d6b-9df6-9ab36e38b09f</symbio:relatedElement>
+                </symbio:relatedElements>
+            </bpmn:extensionElements>
+            <bpmn:incoming xmlns="">TSequenceFlow-58</bpmn:incoming>
+            <bpmn:outgoing xmlns="">TSequenceFlow-57</bpmn:outgoing>
+        </bpmn:task>
+        <bpmn:exclusiveGateway id="TExclusiveGateway-27">
+            <bpmn:incoming xmlns="">TSequenceFlow-26</bpmn:incoming>
+            <bpmn:incoming xmlns="">TSequenceFlow-27</bpmn:incoming>
+            <bpmn:outgoing xmlns="">TSequenceFlow-60</bpmn:outgoing>
+        </bpmn:exclusiveGateway>
+        <bpmn:task name="Answer_Energy Source Choices Hybrid" id="TTask-6">
+            <bpmn:extensionElements>
+                <symbio:relatedElements>
+                    <symbio:relatedElement type="nonLocalBestPracticeTasks">e49b1140-f7ea-4409-8235-2486e4bdb6c7</symbio:relatedElement>
+                </symbio:relatedElements>
+            </bpmn:extensionElements>
+            <bpmn:incoming xmlns="">TSequenceFlow-52</bpmn:incoming>
+            <bpmn:outgoing xmlns="">TSequenceFlow-49</bpmn:outgoing>
+        </bpmn:task>
+        <bpmn:exclusiveGateway id="TExclusiveGateway-3">
+            <bpmn:incoming xmlns="">TSequenceFlow-47</bpmn:incoming>
+            <bpmn:outgoing xmlns="">TSequenceFlow-48</bpmn:outgoing>
+            <bpmn:outgoing xmlns="">TSequenceFlow-51</bpmn:outgoing>
+            <bpmn:outgoing xmlns="">TSequenceFlow-53</bpmn:outgoing>
+        </bpmn:exclusiveGateway>
+        <bpmn:exclusiveGateway id="TExclusiveGateway-32">
+            <bpmn:incoming xmlns="">TSequenceFlow-64</bpmn:incoming>
+            <bpmn:incoming xmlns="">TSequenceFlow-65</bpmn:incoming>
+            <bpmn:outgoing xmlns="">TSequenceFlow-67</bpmn:outgoing>
+        </bpmn:exclusiveGateway>
+        <bpmn:exclusiveGateway id="TExclusiveGateway-9">
+            <bpmn:incoming xmlns="">TSequenceFlow-55</bpmn:incoming>
+            <bpmn:outgoing xmlns="">TSequenceFlow-56</bpmn:outgoing>
+            <bpmn:outgoing xmlns="">TSequenceFlow-58</bpmn:outgoing>
+        </bpmn:exclusiveGateway>
+        <bpmn:task name="Answer_Product Display" id="TTask-43">
+            <bpmn:extensionElements>
+                <symbio:relatedElements>
+                    <symbio:relatedElement type="nonLocalBestPracticeTasks">b7b30db3-c401-42dd-a2e1-68196f653c14</symbio:relatedElement>
+                </symbio:relatedElements>
+            </bpmn:extensionElements>
+            <bpmn:incoming xmlns="">TSequenceFlow-80</bpmn:incoming>
+            <bpmn:outgoing xmlns="">TSequenceFlow-81</bpmn:outgoing>
+        </bpmn:task>
+        <bpmn:task name="Interaction_button-click" id="TTask-19">
+            <bpmn:extensionElements>
+                <symbio:relatedElements>
+                    <symbio:relatedElement type="nonLocalBestPracticeTasks">70ab1586-f54e-4023-b67d-94d39aa7cb59</symbio:relatedElement>
+                </symbio:relatedElements>
+            </bpmn:extensionElements>
+            <bpmn:incoming xmlns="">TSequenceFlow-36</bpmn:incoming>
+            <bpmn:outgoing xmlns="">TSequenceFlow-38</bpmn:outgoing>
+        </bpmn:task>
+        <bpmn:exclusiveGateway id="TExclusiveGateway-37">
+            <bpmn:incoming xmlns="">TSequenceFlow-73</bpmn:incoming>
+            <bpmn:outgoing xmlns="">TSequenceFlow-74</bpmn:outgoing>
+            <bpmn:outgoing xmlns="">TSequenceFlow-76</bpmn:outgoing>
+        </bpmn:exclusiveGateway>
+        <bpmn:task name="Dispatched To Workflow Engine" id="TTask-50">
+            <bpmn:extensionElements>
+                <symbio:relatedElements>
+                    <symbio:relatedElement type="nonLocalBestPracticeTasks">572a5779-687b-4237-8e3b-b8c56abb1aa2</symbio:relatedElement>
+                </symbio:relatedElements>
+            </bpmn:extensionElements>
+            <bpmn:incoming xmlns="">TSequenceFlow-88</bpmn:incoming>
+            <bpmn:outgoing xmlns="">TSequenceFlow-87</bpmn:outgoing>
+        </bpmn:task>
+        <bpmn:task name="Answer_Number Of Air Conditioned Rooms" id="TTask-15">
+            <bpmn:extensionElements>
+                <symbio:relatedElements>
+                    <symbio:relatedElement type="nonLocalBestPracticeTasks">37ad747c-5e1b-4699-a719-93eadecee245</symbio:relatedElement>
+                </symbio:relatedElements>
+            </bpmn:extensionElements>
+            <bpmn:incoming xmlns="">TSequenceFlow-41</bpmn:incoming>
+            <bpmn:outgoing xmlns="">TSequenceFlow-40</bpmn:outgoing>
+        </bpmn:task>
+        <bpmn:task name="Interaction_tool-start" id="TTask-2">
+            <bpmn:extensionElements>
+                <symbio:relatedElements>
+                    <symbio:relatedElement type="nonLocalBestPracticeTasks">e8c7ace7-f546-49c9-a53d-8a125a803b07</symbio:relatedElement>
+                </symbio:relatedElements>
+            </bpmn:extensionElements>
+            <bpmn:incoming xmlns="">TSequenceFlow-46</bpmn:incoming>
+            <bpmn:outgoing xmlns="">TSequenceFlow-47</bpmn:outgoing>
+        </bpmn:task>
+        <bpmn:exclusiveGateway id="TExclusiveGateway-31">
+            <bpmn:incoming xmlns="">TSequenceFlow-63</bpmn:incoming>
+            <bpmn:outgoing xmlns="">TSequenceFlow-64</bpmn:outgoing>
+            <bpmn:outgoing xmlns="">TSequenceFlow-66</bpmn:outgoing>
+        </bpmn:exclusiveGateway>
+        <bpmn:task name="Answer_Number Of Bathrooms" id="TTask-39">
+            <bpmn:extensionElements>
+                <symbio:relatedElements>
+                    <symbio:relatedElement type="nonLocalBestPracticeTasks">00bd1fb1-0057-478f-b4b1-fbd5444dc980</symbio:relatedElement>
+                </symbio:relatedElements>
+            </bpmn:extensionElements>
+            <bpmn:incoming xmlns="">TSequenceFlow-76</bpmn:incoming>
+            <bpmn:outgoing xmlns="">TSequenceFlow-75</bpmn:outgoing>
+        </bpmn:task>
+        <bpmn:exclusiveGateway id="TExclusiveGateway-18">
+            <bpmn:incoming xmlns="">TSequenceFlow-37</bpmn:incoming>
+            <bpmn:incoming xmlns="">TSequenceFlow-38</bpmn:incoming>
+            <bpmn:outgoing xmlns="">TSequenceFlow-35</bpmn:outgoing>
+        </bpmn:exclusiveGateway>
+        <bpmn:task name="Answer_Lead Purpose" id="TTask-7">
+            <bpmn:extensionElements>
+                <symbio:relatedElements>
+                    <symbio:relatedElement type="nonLocalBestPracticeTasks">57fca0c5-636e-44cd-b85c-9daf44d6e5c5</symbio:relatedElement>
+                </symbio:relatedElements>
+            </bpmn:extensionElements>
+            <bpmn:incoming xmlns="">TSequenceFlow-53</bpmn:incoming>
+            <bpmn:outgoing xmlns="">TSequenceFlow-50</bpmn:outgoing>
+        </bpmn:task>
+        <bpmn:exclusiveGateway id="TExclusiveGateway-23">
+            <bpmn:incoming xmlns="">TSequenceFlow-32</bpmn:incoming>
+            <bpmn:outgoing xmlns="">TSequenceFlow-29</bpmn:outgoing>
+            <bpmn:outgoing xmlns="">TSequenceFlow-30</bpmn:outgoing>
+        </bpmn:exclusiveGateway>
+        <bpmn:task name="Answer_Installers Display" id="TTask-47">
+            <bpmn:extensionElements>
+                <symbio:relatedElements>
+                    <symbio:relatedElement type="nonLocalBestPracticeTasks">d145238b-2eae-49fa-9b7c-6fa19a85eb19</symbio:relatedElement>
+                </symbio:relatedElements>
+            </bpmn:extensionElements>
+            <bpmn:incoming xmlns="">TSequenceFlow-84</bpmn:incoming>
+            <bpmn:outgoing xmlns="">TSequenceFlow-85</bpmn:outgoing>
+        </bpmn:task>
+        <bpmn:exclusiveGateway id="TExclusiveGateway-24">
+            <bpmn:incoming xmlns="">TSequenceFlow-30</bpmn:incoming>
+            <bpmn:incoming xmlns="">TSequenceFlow-31</bpmn:incoming>
+            <bpmn:outgoing xmlns="">TSequenceFlow-28</bpmn:outgoing>
+        </bpmn:exclusiveGateway>
+        <bpmn:exclusiveGateway id="TExclusiveGateway-13">
+            <bpmn:incoming xmlns="">TSequenceFlow-44</bpmn:incoming>
+            <bpmn:incoming xmlns="">TSequenceFlow-43</bpmn:incoming>
+            <bpmn:outgoing xmlns="">TSequenceFlow-80</bpmn:outgoing>
+        </bpmn:exclusiveGateway>
+        <bpmn:exclusiveGateway id="TExclusiveGateway-48">
+            <bpmn:incoming xmlns="">TSequenceFlow-85</bpmn:incoming>
+            <bpmn:outgoing xmlns="">TSequenceFlow-88</bpmn:outgoing>
+            <bpmn:outgoing xmlns="">TSequenceFlow-86</bpmn:outgoing>
+        </bpmn:exclusiveGateway>
+        <bpmn:task name="Answer_Desired Heatpump Type" id="TTask-25">
+            <bpmn:extensionElements>
+                <symbio:relatedElements>
+                    <symbio:relatedElement type="nonLocalBestPracticeTasks">0badde1b-163f-46d8-ac85-67f45536b2aa</symbio:relatedElement>
+                </symbio:relatedElements>
+            </bpmn:extensionElements>
+            <bpmn:incoming xmlns="">TSequenceFlow-29</bpmn:incoming>
+            <bpmn:outgoing xmlns="">TSequenceFlow-31</bpmn:outgoing>
+        </bpmn:task>
+        <bpmn:task name="LMT_Lead" id="TTask-56">
+            <bpmn:extensionElements>
+                <symbio:relatedElements>
+                    <symbio:relatedElement type="nonLocalBestPracticeTasks">3ed37054-e63a-4c0d-b258-bfad502d2b86</symbio:relatedElement>
+                </symbio:relatedElements>
+            </bpmn:extensionElements>
+            <bpmn:incoming xmlns="">TSequenceFlow-104</bpmn:incoming>
+            <bpmn:outgoing xmlns="">TSequenceFlow-105</bpmn:outgoing>
+        </bpmn:task>
+        <bpmn:task name="Answer_Air Conditioned Area" id="TTask-16">
+            <bpmn:extensionElements>
+                <symbio:relatedElements>
+                    <symbio:relatedElement type="nonLocalBestPracticeTasks">0c09afe3-4a91-4330-93d4-5bae648d599b</symbio:relatedElement>
+                </symbio:relatedElements>
+            </bpmn:extensionElements>
+            <bpmn:incoming xmlns="">TSequenceFlow-40</bpmn:incoming>
+            <bpmn:outgoing xmlns="">TSequenceFlow-39</bpmn:outgoing>
+        </bpmn:task>
+        <bpmn:sequenceFlow sourceRef="TParallelGateway-30" targetRef="TExclusiveGateway-13" id="TSequenceFlow-44"/>
+        <bpmn:sequenceFlow sourceRef="TExclusiveGateway-48" targetRef="TTask-50" id="TSequenceFlow-88"/>
+        <bpmn:sequenceFlow sourceRef="TStartEvent-0" targetRef="TTask-2" id="TSequenceFlow-46"/>
+        <bpmn:sequenceFlow sourceRef="TTask-2" targetRef="TExclusiveGateway-3" id="TSequenceFlow-47"/>
+        <bpmn:sequenceFlow sourceRef="TExclusiveGateway-3" targetRef="TExclusiveGateway-4" id="TSequenceFlow-48"/>
+        <bpmn:sequenceFlow sourceRef="TTask-6" targetRef="TExclusiveGateway-4" id="TSequenceFlow-49"/>
+        <bpmn:sequenceFlow sourceRef="TTask-7" targetRef="TExclusiveGateway-4" id="TSequenceFlow-50"/>
+        <bpmn:sequenceFlow sourceRef="TExclusiveGateway-3" targetRef="TTask-5" id="TSequenceFlow-51"/>
+        <bpmn:sequenceFlow sourceRef="TTask-5" targetRef="TTask-6" id="TSequenceFlow-52"/>
+        <bpmn:sequenceFlow sourceRef="TExclusiveGateway-3" targetRef="TTask-7" id="TSequenceFlow-53"/>
+        <bpmn:sequenceFlow sourceRef="TExclusiveGateway-4" targetRef="TTask-8" id="TSequenceFlow-54"/>
+        <bpmn:sequenceFlow sourceRef="TTask-8" targetRef="TExclusiveGateway-9" id="TSequenceFlow-55"/>
+        <bpmn:sequenceFlow sourceRef="TExclusiveGateway-9" targetRef="TExclusiveGateway-10" id="TSequenceFlow-56"/>
+        <bpmn:sequenceFlow sourceRef="TTask-11" targetRef="TExclusiveGateway-10" id="TSequenceFlow-57"/>
+        <bpmn:sequenceFlow sourceRef="TExclusiveGateway-9" targetRef="TTask-11" id="TSequenceFlow-58"/>
+        <bpmn:sequenceFlow sourceRef="TExclusiveGateway-10" targetRef="TExclusiveGateway-12" id="TSequenceFlow-59"/>
+        <bpmn:sequenceFlow sourceRef="TExclusiveGateway-27" targetRef="TParallelGateway-29" id="TSequenceFlow-60"/>
+        <bpmn:sequenceFlow sourceRef="TParallelGateway-35" targetRef="TParallelGateway-30" id="TSequenceFlow-61"/>
+        <bpmn:sequenceFlow sourceRef="TTask-42" targetRef="TParallelGateway-30" id="TSequenceFlow-62"/>
+        <bpmn:sequenceFlow sourceRef="TParallelGateway-29" targetRef="TExclusiveGateway-31" id="TSequenceFlow-63"/>
+        <bpmn:sequenceFlow sourceRef="TExclusiveGateway-31" targetRef="TExclusiveGateway-32" id="TSequenceFlow-64"/>
+        <bpmn:sequenceFlow sourceRef="TTask-33" targetRef="TExclusiveGateway-32" id="TSequenceFlow-65"/>
+        <bpmn:sequenceFlow sourceRef="TExclusiveGateway-31" targetRef="TTask-33" id="TSequenceFlow-66"/>
+        <bpmn:sequenceFlow sourceRef="TExclusiveGateway-32" targetRef="TParallelGateway-34" id="TSequenceFlow-67"/>
+        <bpmn:sequenceFlow sourceRef="TExclusiveGateway-38" targetRef="TParallelGateway-35" id="TSequenceFlow-68"/>
+        <bpmn:sequenceFlow sourceRef="TExclusiveGateway-26" targetRef="TTask-28" id="TSequenceFlow-25"/>
+        <bpmn:sequenceFlow sourceRef="TTask-40" targetRef="TParallelGateway-35" id="TSequenceFlow-69"/>
+        <bpmn:sequenceFlow sourceRef="TExclusiveGateway-26" targetRef="TExclusiveGateway-27" id="TSequenceFlow-26"/>
+        <bpmn:sequenceFlow sourceRef="TTask-28" targetRef="TExclusiveGateway-27" id="TSequenceFlow-27"/>
+        <bpmn:sequenceFlow sourceRef="TExclusiveGateway-24" targetRef="TExclusiveGateway-26" id="TSequenceFlow-28"/>
+        <bpmn:sequenceFlow sourceRef="TExclusiveGateway-23" targetRef="TTask-25" id="TSequenceFlow-29"/>
+        <bpmn:sequenceFlow sourceRef="TTask-41" targetRef="TParallelGateway-35" id="TSequenceFlow-70"/>
+        <bpmn:sequenceFlow sourceRef="TParallelGateway-34" targetRef="TTask-36" id="TSequenceFlow-71"/>
+        <bpmn:sequenceFlow sourceRef="TTask-36" targetRef="TExclusiveGateway-37" id="TSequenceFlow-73"/>
+        <bpmn:sequenceFlow sourceRef="TExclusiveGateway-23" targetRef="TExclusiveGateway-24" id="TSequenceFlow-30"/>
+        <bpmn:sequenceFlow sourceRef="TExclusiveGateway-37" targetRef="TExclusiveGateway-38" id="TSequenceFlow-74"/>
+        <bpmn:sequenceFlow sourceRef="TTask-25" targetRef="TExclusiveGateway-24" id="TSequenceFlow-31"/>
+        <bpmn:sequenceFlow sourceRef="TTask-39" targetRef="TExclusiveGateway-38" id="TSequenceFlow-75"/>
+        <bpmn:sequenceFlow sourceRef="TExclusiveGateway-12" targetRef="TExclusiveGateway-23" id="TSequenceFlow-32"/>
+        <bpmn:sequenceFlow sourceRef="TExclusiveGateway-37" targetRef="TTask-39" id="TSequenceFlow-76"/>
+        <bpmn:sequenceFlow sourceRef="TTask-21" targetRef="TTask-22" id="TSequenceFlow-33"/>
+        <bpmn:sequenceFlow sourceRef="TParallelGateway-34" targetRef="TTask-40" id="TSequenceFlow-77"/>
+        <bpmn:sequenceFlow sourceRef="TTask-20" targetRef="TTask-21" id="TSequenceFlow-34"/>
+        <bpmn:sequenceFlow sourceRef="TParallelGateway-34" targetRef="TTask-41" id="TSequenceFlow-78"/>
+        <bpmn:sequenceFlow sourceRef="TExclusiveGateway-18" targetRef="TTask-20" id="TSequenceFlow-35"/>
+        <bpmn:sequenceFlow sourceRef="TParallelGateway-29" targetRef="TTask-42" id="TSequenceFlow-79"/>
+        <bpmn:sequenceFlow sourceRef="TExclusiveGateway-17" targetRef="TTask-19" id="TSequenceFlow-36"/>
+        <bpmn:sequenceFlow sourceRef="TExclusiveGateway-17" targetRef="TExclusiveGateway-18" id="TSequenceFlow-37"/>
+        <bpmn:sequenceFlow sourceRef="TTask-19" targetRef="TExclusiveGateway-18" id="TSequenceFlow-38"/>
+        <bpmn:sequenceFlow sourceRef="TTask-16" targetRef="TExclusiveGateway-17" id="TSequenceFlow-39"/>
+        <bpmn:sequenceFlow sourceRef="TExclusiveGateway-49" targetRef="TTask-56" id="TSequenceFlow-104"/>
+        <bpmn:sequenceFlow sourceRef="TTask-56" targetRef="TEndEvent-1" id="TSequenceFlow-105"/>
+        <bpmn:sequenceFlow sourceRef="TExclusiveGateway-13" targetRef="TTask-43" id="TSequenceFlow-80"/>
+        <bpmn:sequenceFlow sourceRef="TTask-43" targetRef="TTask-44" id="TSequenceFlow-81"/>
+        <bpmn:sequenceFlow sourceRef="TTask-44" targetRef="TTask-45" id="TSequenceFlow-82"/>
+        <bpmn:sequenceFlow sourceRef="TTask-45" targetRef="TTask-46" id="TSequenceFlow-83"/>
+        <bpmn:sequenceFlow sourceRef="TTask-15" targetRef="TTask-16" id="TSequenceFlow-40"/>
+        <bpmn:sequenceFlow sourceRef="TTask-46" targetRef="TTask-47" id="TSequenceFlow-84"/>
+        <bpmn:sequenceFlow sourceRef="TTask-14" targetRef="TTask-15" id="TSequenceFlow-41"/>
+        <bpmn:sequenceFlow sourceRef="TTask-47" targetRef="TExclusiveGateway-48" id="TSequenceFlow-85"/>
+        <bpmn:sequenceFlow sourceRef="TExclusiveGateway-12" targetRef="TTask-14" id="TSequenceFlow-42"/>
+        <bpmn:sequenceFlow sourceRef="TExclusiveGateway-48" targetRef="TExclusiveGateway-49" id="TSequenceFlow-86"/>
+        <bpmn:sequenceFlow sourceRef="TTask-22" targetRef="TExclusiveGateway-13" id="TSequenceFlow-43"/>
+        <bpmn:sequenceFlow sourceRef="TTask-50" targetRef="TExclusiveGateway-49" id="TSequenceFlow-87"/>
+    </bpmn:process>
+    <bpmndi:BPMNDiagram name="Celonis Lmt Event" id="BPMNDiagram-TProcess-1">
+        <bpmndi:BPMNPlane xmlns="" bpmnElement="TProcess-1" id="BPMNPlane-TProcess-1">
+            <bpmndi:BPMNShape bpmnElement="TTask-44" id="BPMNShape-TTask-44">
+                <dc:Bounds x="6736.0" y="-180.0" width="100.0" height="80.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="TTask-45" id="BPMNShape-TTask-45">
+                <dc:Bounds x="6986.0" y="-180.0" width="100.0" height="80.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="TTask-46" id="BPMNShape-TTask-46">
+                <dc:Bounds x="7236.0" y="-180.0" width="100.0" height="80.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="TTask-47" id="BPMNShape-TTask-47">
+                <dc:Bounds x="7486.0" y="-180.0" width="100.0" height="80.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="TExclusiveGateway-48" isMarkerVisible="true" id="BPMNShape-TExclusiveGateway-48">
+                <dc:Bounds x="7736.0" y="-165.0" width="50.0" height="50.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="TExclusiveGateway-49" isMarkerVisible="true" id="BPMNShape-TExclusiveGateway-49">
+                <dc:Bounds x="8186.0" y="-165.0" width="50.0" height="50.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="TTask-50" id="BPMNShape-TTask-50">
+                <dc:Bounds x="7936.0" y="-180.0" width="100.0" height="80.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="TExclusiveGateway-10" isMarkerVisible="true" id="BPMNShape-TExclusiveGateway-10">
+                <dc:Bounds x="2036.0" y="-165.0" width="50.0" height="50.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="TTask-11" id="BPMNShape-TTask-11">
+                <dc:Bounds x="1786.0" y="-180.0" width="100.0" height="80.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="TExclusiveGateway-12" isMarkerVisible="true" id="BPMNShape-TExclusiveGateway-12">
+                <dc:Bounds x="2236.0" y="-165.0" width="50.0" height="50.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="TTask-56" id="BPMNShape-TTask-56">
+                <dc:Bounds x="8386.0" y="-180.0" width="100.0" height="80.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="TExclusiveGateway-13" isMarkerVisible="true" id="BPMNShape-TExclusiveGateway-13">
+                <dc:Bounds x="6286.0" y="-165.0" width="50.0" height="50.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="TTask-14" id="BPMNShape-TTask-14">
+                <dc:Bounds x="2436.0" y="-180.0" width="100.0" height="80.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="TTask-15" id="BPMNShape-TTask-15">
+                <dc:Bounds x="2686.0" y="-180.0" width="100.0" height="80.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="TTask-16" id="BPMNShape-TTask-16">
+                <dc:Bounds x="2936.0" y="-180.0" width="100.0" height="80.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="TExclusiveGateway-17" isMarkerVisible="true" id="BPMNShape-TExclusiveGateway-17">
+                <dc:Bounds x="3186.0" y="-165.0" width="50.0" height="50.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="TExclusiveGateway-18" isMarkerVisible="true" id="BPMNShape-TExclusiveGateway-18">
+                <dc:Bounds x="3636.0" y="-165.0" width="50.0" height="50.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="TTask-19" id="BPMNShape-TTask-19">
+                <dc:Bounds x="3386.0" y="-180.0" width="100.0" height="80.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="TStartEvent-0" id="BPMNShape-TStartEvent-0">
+                <dc:Bounds x="0.0" y="-158.0" width="36.0" height="36.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="TEndEvent-1" id="BPMNShape-TEndEvent-1">
+                <dc:Bounds x="8636.0" y="-158.0" width="36.0" height="36.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="TTask-2" id="BPMNShape-TTask-2">
+                <dc:Bounds x="186.0" y="-180.0" width="100.0" height="80.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="TExclusiveGateway-3" isMarkerVisible="true" id="BPMNShape-TExclusiveGateway-3">
+                <dc:Bounds x="436.0" y="-165.0" width="50.0" height="50.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="TExclusiveGateway-4" isMarkerVisible="true" id="BPMNShape-TExclusiveGateway-4">
+                <dc:Bounds x="1136.0" y="-165.0" width="50.0" height="50.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="TTask-5" id="BPMNShape-TTask-5">
+                <dc:Bounds x="636.0" y="-90.0" width="100.0" height="80.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="TTask-6" id="BPMNShape-TTask-6">
+                <dc:Bounds x="886.0" y="-90.0" width="100.0" height="80.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="TTask-7" id="BPMNShape-TTask-7">
+                <dc:Bounds x="636.0" y="-270.0" width="100.0" height="80.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="TTask-8" id="BPMNShape-TTask-8">
+                <dc:Bounds x="1336.0" y="-180.0" width="100.0" height="80.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="TExclusiveGateway-9" isMarkerVisible="true" id="BPMNShape-TExclusiveGateway-9">
+                <dc:Bounds x="1586.0" y="-165.0" width="50.0" height="50.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="TTask-20" id="BPMNShape-TTask-20">
+                <dc:Bounds x="3836.0" y="-180.0" width="100.0" height="80.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="TTask-21" id="BPMNShape-TTask-21">
+                <dc:Bounds x="4086.0" y="-180.0" width="100.0" height="80.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="TTask-22" id="BPMNShape-TTask-22">
+                <dc:Bounds x="4336.0" y="-180.0" width="100.0" height="80.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="TExclusiveGateway-23" isMarkerVisible="true" id="BPMNShape-TExclusiveGateway-23">
+                <dc:Bounds x="2461.0" y="-385.0" width="50.0" height="50.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="TExclusiveGateway-24" isMarkerVisible="true" id="BPMNShape-TExclusiveGateway-24">
+                <dc:Bounds x="2961.0" y="-385.0" width="50.0" height="50.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="TTask-25" id="BPMNShape-TTask-25">
+                <dc:Bounds x="2686.0" y="-400.0" width="100.0" height="80.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="TExclusiveGateway-26" isMarkerVisible="true" id="BPMNShape-TExclusiveGateway-26">
+                <dc:Bounds x="3186.0" y="-385.0" width="50.0" height="50.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="TExclusiveGateway-27" isMarkerVisible="true" id="BPMNShape-TExclusiveGateway-27">
+                <dc:Bounds x="3636.0" y="-385.0" width="50.0" height="50.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="TTask-28" id="BPMNShape-TTask-28">
+                <dc:Bounds x="3386.0" y="-400.0" width="100.0" height="80.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="TParallelGateway-29" id="BPMNShape-TParallelGateway-29">
+                <dc:Bounds x="3861.0" y="-385.0" width="50.0" height="50.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="TParallelGateway-30" id="BPMNShape-TParallelGateway-30">
+                <dc:Bounds x="6086.0" y="-385.0" width="50.0" height="50.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="TExclusiveGateway-31" isMarkerVisible="true" id="BPMNShape-TExclusiveGateway-31">
+                <dc:Bounds x="4111.0" y="-385.0" width="50.0" height="50.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="TExclusiveGateway-32" isMarkerVisible="true" id="BPMNShape-TExclusiveGateway-32">
+                <dc:Bounds x="4586.0" y="-385.0" width="50.0" height="50.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="TTask-33" id="BPMNShape-TTask-33">
+                <dc:Bounds x="4336.0" y="-400.0" width="100.0" height="80.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="TParallelGateway-34" id="BPMNShape-TParallelGateway-34">
+                <dc:Bounds x="4786.0" y="-385.0" width="50.0" height="50.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="TParallelGateway-35" id="BPMNShape-TParallelGateway-35">
+                <dc:Bounds x="5886.0" y="-385.0" width="50.0" height="50.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="TTask-36" id="BPMNShape-TTask-36">
+                <dc:Bounds x="4986.0" y="-270.0" width="100.0" height="80.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="TExclusiveGateway-37" isMarkerVisible="true" id="BPMNShape-TExclusiveGateway-37">
+                <dc:Bounds x="5236.0" y="-255.0" width="50.0" height="50.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="TExclusiveGateway-38" isMarkerVisible="true" id="BPMNShape-TExclusiveGateway-38">
+                <dc:Bounds x="5686.0" y="-255.0" width="50.0" height="50.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="TTask-39" id="BPMNShape-TTask-39">
+                <dc:Bounds x="5436.0" y="-270.0" width="100.0" height="80.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="TTask-40" id="BPMNShape-TTask-40">
+                <dc:Bounds x="4986.0" y="-400.0" width="100.0" height="80.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="TTask-41" id="BPMNShape-TTask-41">
+                <dc:Bounds x="4986.0" y="-530.0" width="100.0" height="80.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="TTask-42" id="BPMNShape-TTask-42">
+                <dc:Bounds x="4086.0" y="-620.0" width="100.0" height="80.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="TTask-43" id="BPMNShape-TTask-43">
+                <dc:Bounds x="6486.0" y="-180.0" width="100.0" height="80.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-44" id="BPMNEdge-TSequenceFlow-44">
+                <di:waypoint x="6136.0" y="-360.0"/>
+                <di:waypoint x="6311.0" y="-360.0"/>
+                <di:waypoint x="6311.0" y="-165.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-88" id="BPMNEdge-TSequenceFlow-88">
+                <di:waypoint x="7786.0" y="-140.0"/>
+                <di:waypoint x="7936.0" y="-140.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-46" id="BPMNEdge-TSequenceFlow-46">
+                <di:waypoint x="36.0" y="-140.0"/>
+                <di:waypoint x="186.0" y="-140.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-47" id="BPMNEdge-TSequenceFlow-47">
+                <di:waypoint x="286.0" y="-140.0"/>
+                <di:waypoint x="436.0" y="-140.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-48" id="BPMNEdge-TSequenceFlow-48">
+                <di:waypoint x="486.0" y="-140.0"/>
+                <di:waypoint x="1136.0" y="-140.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-49" id="BPMNEdge-TSequenceFlow-49">
+                <di:waypoint x="986.0" y="-50.0"/>
+                <di:waypoint x="1161.0" y="-50.0"/>
+                <di:waypoint x="1161.0" y="-115.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-50" id="BPMNEdge-TSequenceFlow-50">
+                <di:waypoint x="736.0" y="-230.0"/>
+                <di:waypoint x="1161.0" y="-230.0"/>
+                <di:waypoint x="1161.0" y="-165.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-51" id="BPMNEdge-TSequenceFlow-51">
+                <di:waypoint x="461.0" y="-115.0"/>
+                <di:waypoint x="461.0" y="-50.0"/>
+                <di:waypoint x="636.0" y="-50.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-52" id="BPMNEdge-TSequenceFlow-52">
+                <di:waypoint x="736.0" y="-50.0"/>
+                <di:waypoint x="886.0" y="-50.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-53" id="BPMNEdge-TSequenceFlow-53">
+                <di:waypoint x="461.0" y="-165.0"/>
+                <di:waypoint x="461.0" y="-230.0"/>
+                <di:waypoint x="636.0" y="-230.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-54" id="BPMNEdge-TSequenceFlow-54">
+                <di:waypoint x="1186.0" y="-140.0"/>
+                <di:waypoint x="1336.0" y="-140.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-55" id="BPMNEdge-TSequenceFlow-55">
+                <di:waypoint x="1436.0" y="-140.0"/>
+                <di:waypoint x="1586.0" y="-140.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-56" id="BPMNEdge-TSequenceFlow-56">
+                <di:waypoint x="1611.0" y="-165.0"/>
+                <di:waypoint x="1611.0" y="-230.0"/>
+                <di:waypoint x="2061.0" y="-230.0"/>
+                <di:waypoint x="2061.0" y="-165.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-57" id="BPMNEdge-TSequenceFlow-57">
+                <di:waypoint x="1886.0" y="-140.0"/>
+                <di:waypoint x="2036.0" y="-140.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-58" id="BPMNEdge-TSequenceFlow-58">
+                <di:waypoint x="1636.0" y="-140.0"/>
+                <di:waypoint x="1786.0" y="-140.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-59" id="BPMNEdge-TSequenceFlow-59">
+                <di:waypoint x="2086.0" y="-140.0"/>
+                <di:waypoint x="2236.0" y="-140.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-60" id="BPMNEdge-TSequenceFlow-60">
+                <di:waypoint x="3686.0" y="-360.0"/>
+                <di:waypoint x="3861.0" y="-360.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-61" id="BPMNEdge-TSequenceFlow-61">
+                <di:waypoint x="5936.0" y="-360.0"/>
+                <di:waypoint x="6086.0" y="-360.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-62" id="BPMNEdge-TSequenceFlow-62">
+                <di:waypoint x="4186.0" y="-580.0"/>
+                <di:waypoint x="6111.0" y="-580.0"/>
+                <di:waypoint x="6111.0" y="-385.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-63" id="BPMNEdge-TSequenceFlow-63">
+                <di:waypoint x="3911.0" y="-360.0"/>
+                <di:waypoint x="4111.0" y="-360.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-64" id="BPMNEdge-TSequenceFlow-64">
+                <di:waypoint x="4136.0" y="-385.0"/>
+                <di:waypoint x="4136.0" y="-450.0"/>
+                <di:waypoint x="4611.0" y="-450.0"/>
+                <di:waypoint x="4611.0" y="-385.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-65" id="BPMNEdge-TSequenceFlow-65">
+                <di:waypoint x="4436.0" y="-360.0"/>
+                <di:waypoint x="4586.0" y="-360.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-66" id="BPMNEdge-TSequenceFlow-66">
+                <di:waypoint x="4161.0" y="-360.0"/>
+                <di:waypoint x="4336.0" y="-360.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-67" id="BPMNEdge-TSequenceFlow-67">
+                <di:waypoint x="4636.0" y="-360.0"/>
+                <di:waypoint x="4786.0" y="-360.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-68" id="BPMNEdge-TSequenceFlow-68">
+                <di:waypoint x="5736.0" y="-230.0"/>
+                <di:waypoint x="5911.0" y="-230.0"/>
+                <di:waypoint x="5911.0" y="-335.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-25" id="BPMNEdge-TSequenceFlow-25">
+                <di:waypoint x="3236.0" y="-360.0"/>
+                <di:waypoint x="3386.0" y="-360.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-69" id="BPMNEdge-TSequenceFlow-69">
+                <di:waypoint x="5086.0" y="-360.0"/>
+                <di:waypoint x="5886.0" y="-360.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-26" id="BPMNEdge-TSequenceFlow-26">
+                <di:waypoint x="3211.0" y="-385.0"/>
+                <di:waypoint x="3211.0" y="-450.0"/>
+                <di:waypoint x="3661.0" y="-450.0"/>
+                <di:waypoint x="3661.0" y="-385.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-27" id="BPMNEdge-TSequenceFlow-27">
+                <di:waypoint x="3486.0" y="-360.0"/>
+                <di:waypoint x="3636.0" y="-360.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-28" id="BPMNEdge-TSequenceFlow-28">
+                <di:waypoint x="3011.0" y="-360.0"/>
+                <di:waypoint x="3186.0" y="-360.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-29" id="BPMNEdge-TSequenceFlow-29">
+                <di:waypoint x="2511.0" y="-360.0"/>
+                <di:waypoint x="2686.0" y="-360.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-70" id="BPMNEdge-TSequenceFlow-70">
+                <di:waypoint x="5086.0" y="-490.0"/>
+                <di:waypoint x="5911.0" y="-490.0"/>
+                <di:waypoint x="5911.0" y="-385.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-71" id="BPMNEdge-TSequenceFlow-71">
+                <di:waypoint x="4811.0" y="-335.0"/>
+                <di:waypoint x="4811.0" y="-230.0"/>
+                <di:waypoint x="4986.0" y="-230.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-73" id="BPMNEdge-TSequenceFlow-73">
+                <di:waypoint x="5086.0" y="-230.0"/>
+                <di:waypoint x="5236.0" y="-230.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-30" id="BPMNEdge-TSequenceFlow-30">
+                <di:waypoint x="2486.0" y="-385.0"/>
+                <di:waypoint x="2486.0" y="-450.0"/>
+                <di:waypoint x="2986.0" y="-450.0"/>
+                <di:waypoint x="2986.0" y="-385.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-74" id="BPMNEdge-TSequenceFlow-74">
+                <di:waypoint x="5261.0" y="-255.0"/>
+                <di:waypoint x="5261.0" y="-320.0"/>
+                <di:waypoint x="5711.0" y="-320.0"/>
+                <di:waypoint x="5711.0" y="-255.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-31" id="BPMNEdge-TSequenceFlow-31">
+                <di:waypoint x="2786.0" y="-360.0"/>
+                <di:waypoint x="2961.0" y="-360.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-75" id="BPMNEdge-TSequenceFlow-75">
+                <di:waypoint x="5536.0" y="-230.0"/>
+                <di:waypoint x="5686.0" y="-230.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-32" id="BPMNEdge-TSequenceFlow-32">
+                <di:waypoint x="2261.0" y="-165.0"/>
+                <di:waypoint x="2261.0" y="-360.0"/>
+                <di:waypoint x="2461.0" y="-360.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-76" id="BPMNEdge-TSequenceFlow-76">
+                <di:waypoint x="5286.0" y="-230.0"/>
+                <di:waypoint x="5436.0" y="-230.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-33" id="BPMNEdge-TSequenceFlow-33">
+                <di:waypoint x="4186.0" y="-140.0"/>
+                <di:waypoint x="4336.0" y="-140.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-77" id="BPMNEdge-TSequenceFlow-77">
+                <di:waypoint x="4836.0" y="-360.0"/>
+                <di:waypoint x="4986.0" y="-360.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-34" id="BPMNEdge-TSequenceFlow-34">
+                <di:waypoint x="3936.0" y="-140.0"/>
+                <di:waypoint x="4086.0" y="-140.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-78" id="BPMNEdge-TSequenceFlow-78">
+                <di:waypoint x="4811.0" y="-385.0"/>
+                <di:waypoint x="4811.0" y="-490.0"/>
+                <di:waypoint x="4986.0" y="-490.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-35" id="BPMNEdge-TSequenceFlow-35">
+                <di:waypoint x="3686.0" y="-140.0"/>
+                <di:waypoint x="3836.0" y="-140.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-79" id="BPMNEdge-TSequenceFlow-79">
+                <di:waypoint x="3886.0" y="-385.0"/>
+                <di:waypoint x="3886.0" y="-580.0"/>
+                <di:waypoint x="4086.0" y="-580.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-36" id="BPMNEdge-TSequenceFlow-36">
+                <di:waypoint x="3236.0" y="-140.0"/>
+                <di:waypoint x="3386.0" y="-140.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-37" id="BPMNEdge-TSequenceFlow-37">
+                <di:waypoint x="3211.0" y="-165.0"/>
+                <di:waypoint x="3211.0" y="-230.0"/>
+                <di:waypoint x="3661.0" y="-230.0"/>
+                <di:waypoint x="3661.0" y="-165.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-38" id="BPMNEdge-TSequenceFlow-38">
+                <di:waypoint x="3486.0" y="-140.0"/>
+                <di:waypoint x="3636.0" y="-140.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-39" id="BPMNEdge-TSequenceFlow-39">
+                <di:waypoint x="3036.0" y="-140.0"/>
+                <di:waypoint x="3186.0" y="-140.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-104" id="BPMNEdge-TSequenceFlow-104">
+                <di:waypoint x="8236.0" y="-140.0"/>
+                <di:waypoint x="8386.0" y="-140.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-105" id="BPMNEdge-TSequenceFlow-105">
+                <di:waypoint x="8486.0" y="-140.0"/>
+                <di:waypoint x="8636.0" y="-140.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-80" id="BPMNEdge-TSequenceFlow-80">
+                <di:waypoint x="6336.0" y="-140.0"/>
+                <di:waypoint x="6486.0" y="-140.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-81" id="BPMNEdge-TSequenceFlow-81">
+                <di:waypoint x="6586.0" y="-140.0"/>
+                <di:waypoint x="6736.0" y="-140.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-82" id="BPMNEdge-TSequenceFlow-82">
+                <di:waypoint x="6836.0" y="-140.0"/>
+                <di:waypoint x="6986.0" y="-140.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-83" id="BPMNEdge-TSequenceFlow-83">
+                <di:waypoint x="7086.0" y="-140.0"/>
+                <di:waypoint x="7236.0" y="-140.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-40" id="BPMNEdge-TSequenceFlow-40">
+                <di:waypoint x="2786.0" y="-140.0"/>
+                <di:waypoint x="2936.0" y="-140.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-84" id="BPMNEdge-TSequenceFlow-84">
+                <di:waypoint x="7336.0" y="-140.0"/>
+                <di:waypoint x="7486.0" y="-140.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-41" id="BPMNEdge-TSequenceFlow-41">
+                <di:waypoint x="2536.0" y="-140.0"/>
+                <di:waypoint x="2686.0" y="-140.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-85" id="BPMNEdge-TSequenceFlow-85">
+                <di:waypoint x="7586.0" y="-140.0"/>
+                <di:waypoint x="7736.0" y="-140.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-42" id="BPMNEdge-TSequenceFlow-42">
+                <di:waypoint x="2286.0" y="-140.0"/>
+                <di:waypoint x="2436.0" y="-140.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-86" id="BPMNEdge-TSequenceFlow-86">
+                <di:waypoint x="7761.0" y="-165.0"/>
+                <di:waypoint x="7761.0" y="-230.0"/>
+                <di:waypoint x="8211.0" y="-230.0"/>
+                <di:waypoint x="8211.0" y="-165.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-43" id="BPMNEdge-TSequenceFlow-43">
+                <di:waypoint x="4436.0" y="-140.0"/>
+                <di:waypoint x="6286.0" y="-140.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="TSequenceFlow-87" id="BPMNEdge-TSequenceFlow-87">
+                <di:waypoint x="8036.0" y="-140.0"/>
+                <di:waypoint x="8186.0" y="-140.0"/>
+            </bpmndi:BPMNEdge>
+        </bpmndi:BPMNPlane>
+    </bpmndi:BPMNDiagram>
+</bpmn:definitions>
