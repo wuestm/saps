@@ -1,0 +1,21 @@
+\chapter{Conclusion}
+
+This project set out to answer the research question: 
+\begin{center}
+    \textit{``How can process mining be utilized to optimize lead management and enhance sales performance at Robert Bosch GmbH?''} \\
+\end{center}
+Based on the conducted analysis of the Bosch Home Comfort lead management process, the results of chapters four and five show that process mining is a powerful and suitable approach to achieve both objectives.
+
+By combining the two data sources Google Analytics wizard data and the internal lead management tool into a unified event log and analyzing it with Celonis, this study made previously unknown process behavior transparent. The discovery phase revealed that Bosch’s lead management process exhibits the characteristics of a highly unorganized \textbf{spaghetti} process, as described by \citeauthor{AalstSpaghetti} in literature. Traditional reporting tools such as PowerBI were not able to capture this complexity, whereas process mining enabled an view of actual process executions with building an integrated process model (\ref{fig:wizard_lmt_combined}) which reflects the reality.
+
+With respect to \textbf{lead management optimization}, process mining revealed multiple improvement opportunities within the process. First, the control-flow and variant analyses uncovered typical and atypical lead paths, including dominant ``happy paths'' for major technologies and numerous low-frequency variants that collectively account for more than half of all cases. Second, the throughput-time and drop-off analyses identified critical points in wizard data, such as specific questions with unusually high median response times and high drop-off rates. These insights lead into direct  design improvements, for example the removal of non-essential questions that cause early lead termination (question about placement of outdoor unit). Third, process mining exposed structural inefficiencies in downstream stages, such as long and highly variable waiting times between lead acceptance and the transition to “in progress,” as well as a significant share of leads that never reach this status at all.
+
+In terms of \textbf{enhancing sales performance}, the analysis showed how process mining can link process behavior to business outcomes. By correlating lead attributes, technologies, regions, and installer characteristics with key performance indicators such as acceptance time and sales rate, the study identified patterns that would remain hidden in tools such as PowerBI. For instance, differences in acceptance speed and conversion rates across technologies and installers highlight opportunities for differentiated lead routing and lead scoring. Furthermore, the use of advanced Celonis functionalities such as the Insight Explorer demonstrated how changes, such as making certain wizard fields mandatory or focusing on high-performing building types like ``detached flat'', can  improve sales-related \ac{kpi}s and result in revenue growth (\ref{fig:celonis_insight_explorer}).
+
+While this work focused on a proof of concept for the German market, the findings suggest high potential for a wider roll-out managed by a Bosch internal IT department (\ac{bdo}) in other countries that participate in Lead Management. 
+
+\textbf{Critical Appraisal}
+
+While this project papers shows the potential of Process Mining inside Lead Management, especially the \ac{llcm} showed limitations while creating the integrated process model. Since the Bosch-internal \ac{lmt} tool is under constant development and multiple parties (up to three different installers and end customers) are involved and can trigger processes at different times, there are more than $2.000$ different variants found by Celonis. Even with combining the $10$ most frequent versions, fitness remains relatively low with $31\%$.
+
+Also, results of this study should be interpreted with caution regarding generalization. The analysis focuses on the German market and a specific implementation of Bosch Home Comfort’s Lead Management process.

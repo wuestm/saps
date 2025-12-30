@@ -1,0 +1,134 @@
+\chapter{Introduction}
+
+\begin{fquote}[Alex Rinke] [CEO and Founder of Celonis] [2023] Processes are the engine that make value repeatable in every business.
+ \end{fquote}
+
+This statement was made by Alex Rinke, one of the founders of \textbf{Celonis}, Germany’s most valuable tech start-up, currently valued at around 18 billion euros \cite{celonis2024cloud100}. Celonis offers a web-based Process Mining platform that provides companies with insights into their operations, helping them identify inefficiencies, bottlenecks, and hidden potentials.  
+
+As expectations for Process Mining software continue to grow, many traditional manufacturing companies, such as Robert Bosch, still face challenges in managing the complexity of their existing processes that have evolved over time. These processes however, have direct consequences on the attractiveness of products, services and define the work of every employee \cite{dumas_laRosa_mendling_reijers_2018}. In today’s world made up of \ac{vuca}, innovative approaches to acquire and retain customers are essential. One modern approach of customer acquisition is \textbf{Lead Management}.  
+
+This paper aims to establish a link between Process Mining and Lead Management \textendash{} a connection which has received little attention in the academic literature so far \cite{LeadmanagementDataMining2021}. 
+
+\newpage
+
+\section{Initial Situation}
+
+The Bosch Home Comfort Group uses Lead Management since early 2018. Until the COVID-19 crisis and sudden material shortages, little attention was given towards an active Lead Management. This changed dramatically in 2023, as decreasing demand for heating and cooling required active customer- and lead acquisition. The lead volume increased, however the lead management itself remained unchanged from its original form, its processes and measures were never analyzed. In advance to this study, Marketing and Sales departments of Bosch Germany had multiple questions that could not be answered by traditional data analytics through e.g. PowerBI. 
+
+\section{Research Objective}
+
+Goal of this project paper is to discover insights on Lead Management with the help of Process Mining. Specifically, the study aims to explore how Process Mining techniques can provide transparency into the lead acquisition- and conversion processes, identify inefficiencies, and generate data-driven insights that support decision-makers in optimizing sales activities. 
+
+By performing a case study at Bosch, this project paper tries to combine Process Mining and Lead Management and demonstrate the potential of process-based analytics.
+
+This research seeks to answer the question:
+
+\begin{center}
+    \textit{"How can process mining be utilized to optimize lead management and enhance sales performance at Robert Bosch GmbH?"}
+\end{center}
+
+\newpage
+
+\section{Methodology}
+First of all, this project paper provides the user with a general overview of Process Mining in chapter two and Lead Management in chapter three. There, a framework called \ac{llcm} is introduced which serves as the methodological basis to analyze the case study. Chapter four deals with the problem statement at Robert Bosch GmbH and the challenge of adapting Process Mining to a Lead Management use case. Following the \ac{llcm}, the data is extracted from existing systems, process models are created and questions are formulated to address and optimize the current Lead Management at Bosch.
+Insights and improvements to those questions are presented in chapter five, a final conclusion with a critical appraisal is drawn in chapter six.
+
+
+\begin{comment}
+
+]%
+\blindtext
+
+\subsection{Bilder und Abbildungen}
+
+Auch in einer wissenschaftlichen Arbeit können Bilder und Abbildungen zur Veranschaulichung und zur Illustration sachlicher Inhalte integriert und einfügt werden. Für Fotografien und Bilder unterstützt PDF-\LaTeX{} direkt \verb|jpg| und \verb|png|. Ansonsten empfiehlt es sich, Vektorgrafiken zu verwenden und diese als \verb|pdf| zu speichern. Sollte ein Bild einmal von zu viel weißem Raum umgeben sein, kann man mit dem Werkzeug \verb|pdfcrop| das Bild automatisch zuschneiden.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=.4\textwidth]{images/Suffix_tree_ABAB_BABA}
+\caption{\label{fig:bild1}Beschreibung/Beschriftung des Bilds}
+\end{figure}
+
+Mit Hilfe eines Labels \verb|\label{fig:bild1}| kann man sich dann im fortlaufenden Text mittels eines Querverweises auf diese Grafik beziehen: \verb|\ref{fig:bild1}|. An der Stelle des ref-Kommandos platziert LaTeX die Nummer der Abbildung: \glq siehe Abbildung \ref{fig:bild1}\grq.
+
+
+\subsection{Tabellen}
+\label{sec:tabellen}
+
+Seite \pageref{tab:beispieltabelle}, Abschnitt \ref{sec:tabellen}, enthält Beispieltabelle \ref{tab:beispieltabelle}. In vielen \LaTeX{}-Büchern finden sich gute Anleitungen zum Erstellen von Tabellen. Komplexere Tabellen können sinnvollerweise in Excel oder einer anderen Tabellenkalulation vorgefertigt und mit einem Umwandlungsprogramm oder -werkzeug in LaTeX-Quellcode konvertiert werden.
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{|lll|}
+    \hline
+	A & B & C \\
+	\hline
+	x & x & x \\
+	x & x & x \\
+	\hline
+\end{tabular}
+\end{center}
+\caption{Eine kleine Beispieltabelle}
+\label{tab:beispieltabelle}
+\end{table}
+
+
+\subsection{Formeln}
+
+Mathematische Formeln lassen sich in der Umgebung  \verb|math| erzeugen. Die Kurz- Schreibweise lautet \verb|\( a^2+b^2=c^2 \)|;  hierbei steht die Formel dann im laufenden Text: \( a^2+b^2=c^2 \). Die kürzeste Form ist mit zwei \verb|$| um die Formel, z.B.~so: Wasser ist H$_2$O. \verb|H$_2$O|
+
+Mit der Schreibweise \verb|\[ y=x^2 \]| wird die Formel mittig in einer eigenen Zeile gesetzt, z.B.
+
+\[y = x^2 \]
+
+Formeln in der Umgebung \verb|equation| werden mittig in einer eigenen Zeile gesetzt und fortlaufend nummeriert:
+
+\begin{equation}
+x_{1,2} = \frac{-b\pm\sqrt{b^2-4ac}}{2a}
+\label{mitternachtsformel}
+\end{equation}
+Wenn wir z.B.~über die beliebte Mitternachtsformel (Gleichung \ref{mitternachtsformel}) Details im umliegenden Text schreiben wollen, lässt sich diese wie ein Bild oder eine Tabelle referenzieren, sofern man ihr ein Label zugewiesen hat..
+
+
+\subsection{Programmier-Code}
+
+Mehrzeiliger Programmier- und Quellcode kann mit \verb|verbatim| in einer Umgebung gesetzt werden:
+
+
+  Dieser Text steht in einer verbatim-Umgebung und wird daher
+  in Schreibmaschinenschrift geschrieben.
+  LaTeX-Kommandos, z.B. \includegraphics[width=.6\textwidth]{bild.jpg}
+  werden nicht interpretiert, sondern "verbatim" ausgegeben.
+
+
+Schöner und professioneller lässt sich Programmier-Code mit dem \verb|listings|-Paket, eingeben, formatieren und ausgeben. Dazu kann man in der Präambel die Sprache angeben, in der die Quellcodes geschrieben sind.
+
+\begin{lstlisting}
+public class Hello {
+    public static void main(String[] args) {
+        System.out.println("Hello World");
+    }
+}
+\end{lstlisting}
+
+Innerhalb einer Zeile gibt man Wörter am Besten als \verb|\verb##| an, dabei erwartet \LaTeX{} zweimal das gleiche Zeichen als Begrenzer. Im Beispiel ist dies die Raute \verb|#|, man kann aber auch jedes andere Zeichen nehmen, z.B. das Plus $+$.
+
+
+
+\section{Text}
+
+Textteile können bei Bedarf mit dem Befehl \verb|\emph{}| \emph{hervorgehoben} werden. Falls in einem Satz ein Punkt vorkommt, macht man danach kein Leerzeichen sondern eine Tilde (\verb|z.~B.~so!|), denn dann fügt \LaTeX{} den korrekten Abstand ein, z.~B.~so!
+
+
+In der Präambel der vorliegenden tex-Datei gibt es den Befehl \verb|hypenation|, der zur Silbentrennung da ist. \LaTeX{} verfügt zwar über  eine eingebaute Silbentrennung, die jedoch bei manchen Wörtern falsch trennt. Damit diese Wörter korrekt getrennt werden, gibt man sie dann mit dem Befehl in der Präambel an\footnote{Das Wort \emph{Silbentrennung} ist hier das Beispiel}.
+
+Fußnoten werden mit dem Befehl \verb|footnote| mitten in den fortlaufenden Text eingefügt. \footnote{Wie man schon im vorherigen Absatz sehen konnte.}
+
+In wissenschaftlichen Arbeiten muss man des öfteren andere Arbeiten zitieren. Dazu nutzt man die Stiloptionen und Zitierbefehle des Pakets \verb+biblatex+, z.\,B.\,\verb|numeric| (=Standard-Stil) oder \verb|verbose| resp. \verb|\cite{name}| oder \verb|\autocite{name}|. In eckigen Klammern kann man noch die Seitenzahl angeben, falls notwendig. Der Name ist ein Schlüssel aus der Datei \verb|bibliography.bib|. Falls einmal ein Werk nur indirekt zu einem Teil der Arbeit beigetragen hat, kann man es auch mit \verb|nocite| angeben, dann landet es in der Literaturliste, ohne dass es im Text ausdrücklich zitert wird.
+
+
+\subsection{Weiterführendes}
+
+Zum Schluss sei auf die Vielzahl an Büchern zu \LaTeX{} verwiesen. In jeder Bibliothek wird sich eine Einführung finden, in der dann weitere Themen wie mathematische Formeln, Aufbau von Briefen und viele nützliche Erweiterungen besprochen werden.
+
+\end{comment}

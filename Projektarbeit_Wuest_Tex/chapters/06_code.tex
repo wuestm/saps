@@ -1,0 +1,192 @@
+\chapter{Source Code}
+
+This chapter contains an abstract of source code used in this project paper.
+\section{Google Analytics Extraction}
+\label{sec:code_google_analytics}
+\begin{lstlisting}[language=SQL, 
+                    breaklines]
+%sql
+
+
+SELECT DISTINCT
+  element_at(
+    map_from_entries(
+      transform(event_params, x -> (x.key, x.value.string_value))
+    ),
+    'event_label'
+  ) AS event_label,
+  element_at(
+    map_from_entries(
+      transform(event_params, x -> (x.key, CAST(x.value.int_value AS STRING)))
+    ),
+    'ga_session_number'
+  ) AS ga_session_number
+FROM hcdap_prod.bronze_ga4_website.ttmk_brandwebsite_bosch_de_de_326398072_ga4
+WHERE event_name = 'lmt_toolstart'
+  AND element_at(
+        map_from_entries(
+          transform(event_params, x -> (x.key, x.value.string_value))
+        ),
+        'event_label'
+      ) IS NOT NULL;
+
+
+-- Haupt-Query: Klickstrecke mit event_label + ga_session_number
+SELECT
+  lead.ID AS Lead_ID,
+  uuid_user,
+  ga_session_number,
+  date_format(
+    from_unixtime(event_timestamp / 1000000),
+    "yyyy-MM-dd'T'HH:mm:ss.SSSXXX"
+  ) AS EventDate,
+  event_timestamp,
+  event_name,
+  event_action,
+  event_category,
+  event_label,
+  ROW_NUMBER() OVER (PARTITION BY uuid_user ORDER BY event_timestamp ASC) AS click_order
+FROM (
+  SELECT
+    event_timestamp,
+    event_name,
+
+    -- uuid_user aus user_properties
+    element_at(
+      map_from_entries(
+        transform(user_properties, x -> (x.key, x.value.string_value))
+      ),
+      'uuid_user'
+    ) AS uuid_user,
+
+    -- ga_session_number aus event_params
+    element_at(
+      map_from_entries(
+        transform(event_params, x -> (x.key, CAST(x.value.int_value AS STRING)))
+      ),
+      'ga_session_number'
+    ) AS ga_session_number,
+
+    -- event_action, category und label aus event_params
+    element_at(
+      map_from_entries(
+        transform(event_params, x -> (x.key, x.value.string_value))
+      ),
+      'event_action'
+    ) AS event_action,
+
+    element_at(
+      map_from_entries(
+        transform(event_params, x -> (x.key, x.value.string_value))
+      ),
+      'event_category'
+    ) AS event_category,
+
+    element_at(
+      map_from_entries(
+        transform(event_params, x -> (x.key, x.value.string_value))
+      ),
+      'event_label'
+    ) AS event_label
+
+  FROM hcdap_prod.bronze_ga4_website.ttmk_brandwebsite_bosch_de_de_326398072_ga4
+  WHERE event_name LIKE 'lmt_%'
+) t
+
+LEFT JOIN hcdap_prod.bronze_leadman.lead lead
+  ON t.uuid_user = lead.UserUuid
+WHERE uuid_user IS NOT NULL
+--AND uuid_user = '8dc8f46e-6eab-4542-ae07-ffbf0d12bf01'
+ORDER BY uuid_user ASC, click_order ASC;
+
+
+\end{lstlisting}
+
+\newpage
+\section{Lead Extraction}
+\label{sec:code_bosch_lmt}
+\begin{lstlisting}[language=SQL, 
+                    breaklines]
+%sql
+SELECT 
+    lead.Id AS Lead_ID,
+    lead.UserUuid AS uuid_user, 
+    status.Name AS Status, 
+    marke.Name AS Marke, 
+    source.Name AS Ursprung,
+    lead.CreatedAt,
+    lead.PostalCode,
+    lead.Latitude,
+    lead.Longitude,
+    hist.id AS Hist_ID,  
+    hist.EventDate, 
+    hist.Event, 
+    installer.ParticipantId AS KUNNR,
+    partnerlevels.Label AS PartnerLevel,
+    Vbs.SalesRepId AS VBH_ID,
+    CASE
+    WHEN installer.ParticipantId IS NULL OR installer.ParticipantId = ''
+        THEN 'General'
+    WHEN MAX(CASE WHEN hist.Event = 'OfferAccepted' THEN 1 ELSE 0 END)
+         OVER (PARTITION BY lead.Id, installer.ParticipantId) = 1
+        THEN 'TRUE'
+    ELSE 'FALSE'
+    END AS Winning_INHB,
+    get_json_object(lead.ExtraData, '$.QuestionAndAnswers.TechnologiesCategory') AS Requested_Tech, 
+    get_json_object(lead.ExtraData, '$.QuestionAndAnswers.BuildingType') AS BuildingType,
+    get_json_object(lead.ExtraData, '$.QuestionAndAnswers.BuildingYear') AS BuildingYear,
+    get_json_object(lead.ExtraData, '$.QuestionAndAnswers.LeadPurpose') AS LeadPurpose,
+    get_json_object(lead.ExtraData, '$.QuestionAndAnswers.DesiredHeatpumpType') AS DesiredHeatpumpType,
+    get_json_object(lead.ExtraData, '$.QuestionAndAnswers.InstallationPlace') AS InstallationPlace,
+    get_json_object(lead.ExtraData, '$.QuestionAndAnswers.HeatingArea') AS HeatingArea,
+    get_json_object(lead.ExtraData, '$.QuestionAndAnswers.Transfer') AS Transfer,
+    get_json_object(lead.Extradata, '$.QuestionAndAnswers.EnergyConsumption') AS EnergyConsumption,
+    get_json_object(lead.Extradata, '$.QuestionAndAnswers.NumberOfInhabitants') AS NumberOfInhabitants,
+    get_json_object(lead.Extradata, '$.QuestionAndAnswers.SelectedServices.Name') AS SelectedServicesName
+-- '''  COUNT( *), lead.Id'''
+    --lead.ExtraData
+    
+--* 
+FROM hcdap_prod.bronze_leadman.lead lead
+    LEFT JOIN hcdap_prod.bronze_leadman.brokerhistories hist
+        ON lead.id = hist.LeadId
+    LEFT JOIN hcdap_prod.bronze_leadman.leadconsumer leadconsu
+        ON leadconsu.Id = hist.LeadConsumerId
+    LEFT JOIN hcdap_prod.bronze_pp20.installermemberships installer 
+        ON leadconsu.CompanyGuid = installer.Company_CompanyId
+    LEFT JOIN hcdap_prod.bronze_pp20.installerpartnerlevels partnerlevels
+        ON installer.PartnerLevel_Id = partnerlevels.Id
+    LEFT JOIN hcdap_prod.bronze_pp20.installers installers 
+        ON installer.Company_CompanyId = installers.CompanyId
+    LEFT JOIN hcdap_prod.bronze_leadman.leadstatuslookup status 
+        ON lead.Status = status.Id
+    LEFT JOIN hcdap_prod.bronze_leadman.variant variante
+        ON lead.VariantId = variante.Id
+    LEFT JOIN hcdap_prod.bronze_leadman.leadsourcelookup source
+        ON lead.Source = source.Id
+    LEFT JOIN hcdap_prod.bronze_leadman.brandlookup marke
+        ON variante.Brand = marke.Id
+    LEFT JOIN hcdap_prod.bronze_leadman.wizard wizard 
+        ON hist.LeadConsumerId = wizard.LeadConsumerId
+    LEFT JOIN hcdap_prod.bronze_leadman.leadconsumerstatus leadstatus
+        ON wizard.LeadConsumerId = leadstatus.LeadConsumerId
+    LEFT JOIN hcdap_prod.bronze_pp20.salesreps VBs
+        ON VBs.Id = installer.SalesRep_Id
+    LEFT JOIN hcdap_prod.bronze_pp20.salesbranches Salesbranch
+        ON Salesbranch.Id = VBs.SalesBranchId
+    LEFT JOIN hcdap_prod.bronze_pp20.installertools tools
+        ON tools.InstallerMembership_Id = installer.Id 
+       AND tools.Tool = '1'  
+
+WHERE 
+    marke.Name = 'Bosch'
+    AND lead.CreatedAt > '2024-01-01'
+ --   AND lead.CreatedAt = '2025-08-11'
+   -- AND LEFT(installer.ParticipantId, 2) = '39'
+    AND variante.Country = "DE"
+   -- AND lead.ID = '315498'
+
+
+GROUP BY ALL 
+
+\end{lstlisting}
